@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>6 - Récap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">6 - Récap</h1>
+    
+    <h3 class="subtitle">La console ?</h3>
+    <p>La console est un outil pour développeur.</p>
+    <p>Elle permet de tester, debugger en affichant des messages.</p>
+    <p>Le code n'est exécuté que côté client (dans son propre navigateur).</p>
+    <p>On l'ouvre avec F12.</p>
+
+    <h3 class="subtitle">Afficher du texte</h3>
+    <p>On peut afficher du texte dans la console avec <code class="language-js">console.log('texte !');</code></p>
+    <p>Ce texte n'est affiché que dans notre console javascript.</p>
+    <p>On peut aussi utiliser <code class="language-js">alert('alerte !');</code> qui affichera le code sur la page dans une popup.</p>
+
+    <h3 class="subtitle">Variables et types</h3>
+    <p>Une variable permet de conserver une valeur, la nommer, et la réutiliser</p>
+    <pre><code class="language-js">
+        let myVar = 'Hello !';
+        console.log(myVar); // Affichera 'Hello !' dans la console.
+    </code></pre>
+    <p>Nous avons pour l'instant vu deux types de variables : number et string.</p>
+    <pre><code class="language-js">
+        let string1 = 'Chaîne de ';
+        let string2 = 'caractères';
+        let concatenated = string1 + string2;
+        console.log(concatenated); // Affichera 'Chaîne de caractères'.
+    </code></pre>
+    <p>Pour trouver le type d'une variable, on a l'opérateur <code class="language-js">typeof</code></p>
+    <pre><code class="language-js">
+        let myString = 'string';
+        let myNumber = 42;
+
+        typeof myString; // 'string'
+        typeof myNumber; // 'number'
+    </code></pre>
+
+    <h3 class="subtitle">Interaction utilisateur</h3>
+    <p>On peut récupérer une valeur en posant une question à l'utilisateur avec <code class="language-js">prompt</code></p>
+    <pre><code class="language-js">
+        let name = prompt('Quel est votre nom ?');
+        console.log(name); // La valeur donnée par l'utilisateur
+    </code></pre>
+
+    <h3 class="subtitle">Conversion de types de variables</h3>
+    <pre><code class="language-js">
+        typeof parseInt("42"); // "number"
+        String(42); // "string"
+    </code></pre>
+
+    <nav>
+        <a href="5-petits-malins.html">Précédent - Petits malins</a>
+        <a href="final-challenge.html">Suivant - Challenge</a>
+    </nav>
+
+    <script src="prism.js"></script>
+</body>
+</html>
